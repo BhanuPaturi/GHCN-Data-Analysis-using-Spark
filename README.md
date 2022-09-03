@@ -19,6 +19,7 @@ states, and elements inventory specific to each station and time period. These p
 names, geographical coordinates, elevations, and date ranges for each station variable in the inventory.
 
 Daily
+
 The daily climate summaries are comma separated, where each field is separated by a comma ( , ) and
 where null fields are empty. A single row of data contains an observation for a specific station and day,
 and each variable collected by the station is on a separate row.
@@ -41,6 +42,7 @@ TIME field is populated using the NOAA / NCDC Multinetwork Metadata System (MMS)
 ```
 
 Metadata
+
 The station, country, state, and variable inventory metadata files are fixed width text formatted, where
 each column has a fixed width specified by a character range and where null fields are represented by
 whitespace instead.
