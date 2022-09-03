@@ -27,15 +27,17 @@ The following information defines each field in a single row of data covering on
 described below is separated by a comma ( , ) and follows the order below from left to right in each row.
 
 ```
-Name Type Summary
-ID Character Station code
-DATE Date Observation date formatted as YYYYMMDD
-ELEMENT Character Element type indicator
-VALUE Real Data value for ELEMENT
-MEASUREMENT FLAG Character Measurement Flag
-QUALITY FLAG Character Quality Flag
-SOURCE FLAG Character Source Flag
-OBSERVATION TIME Time Observation time formatted as HHMM
+Name              Type        Summary
+
+ID                Character   Station code
+DATE              Date        Observation date formatted as YYYYMMDD
+ELEMENT           Character   Element type indicator
+VALUE             Real        Data value for ELEMENT
+MEASUREMENT FLAG  Character   Measurement Flag
+QUALITY FLAG      Character   Quality Flag
+SOURCE FLAG       Character   Source Flag
+OBSERVATION       TIME        Time Observation time formatted as HHMM
+
 The specific ELEMENT codes and their units are explained in Section III of the GHCN Daily README,
 along with the MEASUREMENT FLAG, QUALITY FLAG, and SOURCE FLAG. The OBSERVATION
 TIME field is populated using the NOAA / NCDC Multinetwork Metadata System (MMS).
