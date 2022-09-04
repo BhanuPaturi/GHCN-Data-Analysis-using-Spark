@@ -1,7 +1,7 @@
 ###########Processing###########
 
 #How is data structured?
-[bpa78@canterbury.ac.nz@mathmadslinux2p ~]$ hdfs dfs -ls /data/ghcnd/
+[----nz@mathmadslinux2p ~]$ hdfs dfs -ls /data/ghcnd/
 # Found 6 items
 # drwxr-xr-x   - jsw93 supergroup          0 2022-03-16 10:45 /data/ghcnd/daily
 # -rw-r--r--   8 jsw93 supergroup       3659 2021-08-23 09:29 /data/ghcnd/ghcnd-countries.txt
@@ -11,7 +11,7 @@
 # -rw-r--r--   8 jsw93 supergroup      26612 2021-08-09 14:56 /data/ghcnd/readme.txt
 
 #How many years are contained in daily, and how does the size of the data change?
-[bpa78@canterbury.ac.nz@mathmadslinux2p ~]$ hdfs dfs -ls /data/ghcnd/daily/
+[----nz@mathmadslinux2p ~]$ hdfs dfs -ls /data/ghcnd/daily/
 # Found 260 items
 # -rw-r--r--   8 jsw93 supergroup       3358 2021-08-09 15:08 /data/ghcnd/daily/1763.csv.gz
 # -rw-r--r--   8 jsw93 supergroup       3327 2021-08-09 15:03 /data/ghcnd/daily/1764.csv.gz
@@ -275,7 +275,7 @@
 # -rw-r--r--   8 jsw93 supergroup   25985757 2022-03-16 10:45 /data/ghcnd/daily/2022.csv.gz
 
 #What is the total size of all the data? How much of that is daily?
-[bpa78@canterbury.ac.nz@mathmadslinux2p ~]$ hdfs dfs -du -h /data/ghcnd/
+[----nz@mathmadslinux2p ~]$ hdfs dfs -du -h /data/ghcnd/
 # 15.7 G  125.3 G  /data/ghcnd/daily
 # 3.6 K   28.6 K   /data/ghcnd/ghcnd-countries.txt
 # 30.9 M  247.4 M  /data/ghcnd/ghcnd-inventory.txt
@@ -283,7 +283,7 @@
 # 9.7 M   77.7 M   /data/ghcnd/ghcnd-stations.txt
 # 26.0 K  207.9 K  /data/ghcnd/readme.txt
 
-[bpa78@canterbury.ac.nz@mathmadslinux2p ~]$ hdfs dfs -ls /user/bpa78/outputs/ghcnd
+[----nz@mathmadslinux2p ~]$ hdfs dfs -ls /user/bpa78/outputs/ghcnd
 # Found 5 items
 # drwxr-xr-x   - bpa78 bpa78          0 2022-04-21 11:17 /user/bpa78/outputs/ghcnd/Stations
 # drwxr-xr-x   - bpa78 bpa78          0 2022-04-20 23:44 /user/bpa78/outputs/ghcnd/Stations.csv.gz
@@ -293,13 +293,13 @@
 
 
 ###To be check the file size for stations.csv and station.csv.gz
-[bpa78@canterbury.ac.nz@mathmadslinux2p ~]$ hdfs dfs -du -h /user/bpa78/outputs/ghcnd/Station.csv.gz
+[----nz@mathmadslinux2p ~]$ hdfs dfs -du -h /user/bpa78/outputs/ghcnd/Station.csv.gz
 # 0        0      /user/bpa78/outputs/ghcnd/Station.csv.gz/_SUCCESS
 # 728.4 K  2.8 M  /user/bpa78/outputs/ghcnd/Station.csv.gz/part-00000-443d5e2e-c5bc-4156-b64c-cdd8238e9a76-c000.csv.gz
 # 736.4 K  2.9 M  /user/bpa78/outputs/ghcnd/Station.csv.gz/part-00001-443d5e2e-c5bc-4156-b64c-cdd8238e9a76-c000.csv.gz
 # 733.8 K  2.9 M  /user/bpa78/outputs/ghcnd/Station.csv.gz/part-00002-443d5e2e-c5bc-4156-b64c-cdd8238e9a76-c000.csv.gz
 # 744.1 K  2.9 M  /user/bpa78/outputs/ghcnd/Station.csv.gz/part-00003-443d5e2e-c5bc-4156-b64c-cdd8238e9a76-c000.csv.gz
-[bpa78@canterbury.ac.nz@mathmadslinux2p ~]$ hdfs dfs -du -h /user/bpa78/outputs/ghcnd/Stations
+[----nz@mathmadslinux2p ~]$ hdfs dfs -du -h /user/bpa78/outputs/ghcnd/Stations
 # 0      0       /user/bpa78/outputs/ghcnd/Stations/_SUCCESS
 # 2.8 M  11.2 M  /user/bpa78/outputs/ghcnd/Stations/part-00000-f2b9377c-56eb-48e4-9c6a-0253b32fae21-c000.csv
 # 2.8 M  11.3 M  /user/bpa78/outputs/ghcnd/Stations/part-00001-f2b9377c-56eb-48e4-9c6a-0253b32fae21-c000.csv
@@ -348,7 +348,7 @@ wc -l `find /users/home/bpa78/TMIN_TMAX_NZ/*.* -type f`
 
 
 #total number of files and folders in outputs/ghcnd folder
-[bpa78@canterbury.ac.nz@mathmadslinux2p ~]$ hdfs dfs -ls /user/bpa78/outputs/ghcnd
+[----nz@mathmadslinux2p ~]$ hdfs dfs -ls /user/bpa78/outputs/ghcnd
 # Found 7 items
 # drwxr-xr-x   - bpa78 bpa78          0 2022-04-21 11:17 /user/bpa78/outputs/ghcnd/Stations
 # drwxr-xr-x   - bpa78 bpa78          0 2022-04-20 23:44 /user/bpa78/outputs/ghcnd/Stations.csv.gz
